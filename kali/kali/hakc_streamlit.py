@@ -21,12 +21,12 @@ from anthropic.types.beta import BetaMessage, BetaTextBlock, BetaToolUseBlock
 from anthropic.types.tool_use_block import ToolUseBlock
 from streamlit.delta_generator import DeltaGenerator
 
-from loop import (
+from kali.loop import (
     PROVIDER_TO_DEFAULT_MODEL_NAME,
     APIProvider,
     sampling_loop,
 )
-from tools import ToolResult
+from kali.tools import ToolResult
 
 CONFIG_DIR = PosixPath("~/.anthropic").expanduser()
 API_KEY_FILE = CONFIG_DIR / "api_key"
